@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/material.dart';
+import 'package:Gamer/util/Constant.dart';
 import 'package:Gamer/services/tournament_service.dart';
 import 'package:provider/provider.dart';
 import 'package:chopper/chopper.dart';
@@ -11,7 +11,7 @@ void main() {
       providers: [
         Provider(
           create: (_) => ChopperClient(
-            baseUrl: "http://tournaments-dot-game-tv-prod.uc.r.appspot.com",
+            baseUrl: BASE_URL,
             services: [
               TournamentService.create(),
             ],
